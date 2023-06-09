@@ -2,10 +2,6 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-.small-caps {
-  font-variant-caps: small-caps;
-}
-
 .footer .icon-link {
     font-size: 25px;
     color: #000;
