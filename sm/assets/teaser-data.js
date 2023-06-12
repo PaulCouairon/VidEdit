@@ -1,7 +1,7 @@
 file_paths = {
-    "white-horse-pink": "./sm/assets/our_results/white_horse/pink_horse.jpg",
-    "white-horse-bronze": "./sm/assets/our_results/white_horse/bronze_horse.jpg",
-    "white-horse-robot": "./sm/assets/our_results/white_horse/robot_horse.jpg",
+    "bus-retrowave": "./test/static/gif/bus_retrowave.gif",
+    "bus-rusty": "./test/static/gif/bus_rusty.gif",
+    "bus-watercolor": "./test/static/gif/bus_watercolor.gif",
 
     "dancing-robots": "./sm/assets/our_results/dancing_couple/robots_dancing.jpg",
     "dancing-cartoon": "./sm/assets/our_results/dancing_couple/cartoon_dancing.jpg",
