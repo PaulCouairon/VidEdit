@@ -1,7 +1,7 @@
 file_paths = {
-    "skiing-pink-sunset": "./assets/results/tuneavideo/man-skiing/pink-sunset.gif",
-    "skiing-wonder-woman": "./assets/results/tuneavideo/man-skiing/wonder-woman.gif",
-    "skiing-spiderman-beach": "./assets/results/tuneavideo/man-skiing/spiderman-beach.gif",
+    "bus-retrowave": "./assets/data/gif/bus_retrowave.gif",
+    "bus-rusty": "./assets/data/gif/bus_rusty.gif",
+    "bus-watercolor": "./assets/data/gif/bus_watercolor.gif",
 
     "car-moving-snow": "./assets/results/tuneavideo/car-turn/car-snow.gif",
     "car-moving-cartoon": "./assets/results/tuneavideo/car-turn/car-cartoon.gif",
