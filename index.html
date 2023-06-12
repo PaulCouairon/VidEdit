@@ -213,10 +213,23 @@
         </div>
         <br />
         <p style="text-align: justify">
-            Given a text-video pair (e.g., “a man is skiing”) as input, our method leverages the pretrained T2I diffusion 
-            models for T2V generation. During fine-tuning, we update the projection matrices in attention blocks using the 
-            standard diffusion training loss. During inference, we sample a novel video from the latent noise inverted 
-            from the input video, guided by an edited prompt (e.g., “Spider Man is surfing on the beach, cartoon style”).
+            An input video <b>(1)</b> is fed into NLA models which learn to decompose it into 2D atlases <b>(2)</b>. 
+            Depending on the object we want to edit, we select an atlas representation onto which we apply our editing diffusion pipeline <b>(3)</b>. 
+            The edited atlas is then mapped back to frames via a bilinear sampling from the associated pre-trained network <b>(4)</b>. 
+            Finally, the frame edit layers are composited over the original frames to obtain our desired edited video <b>(5)</b>.
+        </p>
+
+        <br />
+
+        <div style="text-align: center">
+            <img src="./assets/method/VidEdit.pdf" alt="" width="1080px" style="max-width: 100%; height: auto;" />
+        </div>
+        <br />
+        <p style="text-align: justify">
+            An input video <b>(1)</b> is fed into NLA models which learn to decompose it into 2D atlases <b>(2)</b>. 
+            Depending on the object we want to edit, we select an atlas representation onto which we apply our editing diffusion pipeline <b>(3)</b>. 
+            The edited atlas is then mapped back to frames via a bilinear sampling from the associated pre-trained network <b>(4)</b>. 
+            Finally, the frame edit layers are composited over the original frames to obtain our desired edited video <b>(5)</b>.
         </p>
         
         <p class="section">&nbsp;</p>
