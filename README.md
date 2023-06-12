@@ -1,1 +1,0 @@
-# VidEdit: Zero-Shot and Spatially Aware Video Editing.
