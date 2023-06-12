@@ -11,10 +11,10 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Plug-and-Play Diffusion Features for Text-Driven Image-to-Image Translation</title>
+    <title>VidEdit: Zero-Shot and Spatially Aware Video Editing</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <meta name="description"
-        content="Project page for &#39;Plug-and-Play Diffusion Features for Text-Driven Image-to-Image Translation.&#39;">
+        content="Project page for &#39;VidEdit: Zero-Shot and Spatially Aware Video Editing.&#39;">
     <link rel="icon" href="./pics/wis_logo.jpg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -35,14 +35,14 @@
             <span>CVPR 2023</span>
     </div>
     <p class="author">
-        <span class="author"><a target="_blank" href="https://www.linkedin.com/in/narek-tumanyan-5a3334122/">Narek
-                Tumanyan</a>&nbsp;<sup>*</sup></span>
-        <span class="author"><a target="_blank" href="https://www.linkedin.com/in/michal-geyer-aa3a021b1">Michal
-                Geyer&nbsp;</a><sup>*</sup></span>
-        <span class="author"><a target="_blank" href="https://www.weizmann.ac.il/math/bagon/home">Shai
-                Bagon</a>&nbsp;<sup>&nbsp;</sup></span>
-        <span class="author"><a target="_blank" href="https://www.weizmann.ac.il/math/dekel/">Tali
-                Dekel</a>&nbsp;<sup>&nbsp;</sup></span>
+        <span class="author"><a target="_blank" href="">Paul
+                Couairon</a>&nbsp;<sup>*</sup></span>
+        <span class="author"><a target="_blank" href="https://cedric.cnam.fr/~rambourc/">Clément Rambour
+                &nbsp;</a><sup>*</sup></span>
+        <span class="author"><a target="_blank" href="">Jean-Emmanuel
+                Haugeard</a>&nbsp;<sup>&nbsp;</sup></span>
+        <span class="author"><a target="_blank" href="https://thome.isir.upmc.fr">Nicolas
+                Thome</a>&nbsp;<sup>&nbsp;</sup></span>
     </p>
     <table border="0" align="center" class="affiliations" width="1200px">
         <tbody align="center">
@@ -70,17 +70,17 @@
                             <!-- White horse -->
                             <div class="carousel-item active">
                                 <div>
-                                    <img class="teaser-img" src="./sm/assets/our_results/white_horse/horse.jpg" />
+                                    <img class="teaser-img" src="./test/static/gif/bus.gif" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="white-horse-result" class="teaser-img" src="./sm/assets/our_results/white_horse/pink_horse.jpg" />
+                                    <img id="white-horse-result" class="teaser-img" src="./test/static/gif/bus_retrowave.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('white-horse-pink', ['white-horse-bronze', 'white-horse-robot'], 'white-horse-result')" class="caption caption-active" id="white-horse-pink">"a photo of a pink toy horse on the beach"</div>
+                                    <div onclick="toggle_prompt('bus-retrowave', ['bus_rusty', 'bus_watercolor'], 'white-horse-result')" class="caption caption-active" id="white-horse-pink">"a photo of a pink toy horse on the beach"</div>
                                     <br />
-                                    <div onclick="toggle_prompt('white-horse-bronze', ['white-horse-pink', 'white-horse-robot'], 'white-horse-result')" class="caption" id="white-horse-bronze">"a photo of a bronze horse in a museum"</div>
+                                    <div onclick="toggle_prompt('bus_rusty', ['bus-retrowave', 'bus_watercolor'], 'white-horse-result')" class="caption" id="white-horse-bronze">"a photo of a bronze horse in a museum"</div>
                                     <br />
-                                    <div onclick="toggle_prompt('white-horse-robot', ['white-horse-bronze', 'white-horse-pink'], 'white-horse-result')" class="caption" id="white-horse-robot">"a photo of a robot horse"</div>
+                                    <div onclick="toggle_prompt('bus_watercolor', ['bus-retrowave', 'bus_rusty'], 'white-horse-result')" class="caption" id="white-horse-robot">"a photo of a robot horse"</div>
                                 </div>
                             </div>
 
