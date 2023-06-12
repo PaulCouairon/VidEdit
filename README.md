@@ -1,2 +1,1 @@
-# pnp-diffusion-github-io
-Plug-and-Play Diffusion features.
+# VidEdit: Zero-Shot and Spatially Aware Video Editing.
