@@ -3,9 +3,9 @@ file_paths = {
     "bus-rusty": "./assets/data/gif/bus_rusty.gif",
     "bus-watercolor": "./assets/data/gif/bus_watercolor.gif",
 
-    "car-moving-snow": "./assets/results/tuneavideo/car-turn/car-snow.gif",
-    "car-moving-cartoon": "./assets/results/tuneavideo/car-turn/car-cartoon.gif",
-    "car-moving-porsche": "./assets/results/tuneavideo/car-turn/porsche-beach.gif",
+    "car-turn_retrowave": "./assets/data/gif/car-turn_retrowave.gif",
+    "car-turn_autumn": "./assets/data/gif/car-turn_autumn.gif",
+    "car-turn_rusty": "./assets/data/gif/car-turn_rusty.gif",
 
     "basketball-bond": "./assets/results/tuneavideo/man-basketball/bond.gif",
     "basketball-lego": "./assets/results/tuneavideo/man-basketball/lego.gif",
