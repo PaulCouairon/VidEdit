@@ -191,14 +191,14 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
+            <source src="./gif/final.gif"
+                    type="video/gif">
           </video>
         </div>
         <div class="item item-chair-tp">
           <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
+            <source src="./bus_rusty.gif"
+                    type="video/gif">
           </video>
         </div>
         <div class="item item-shiba">
@@ -250,32 +250,18 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+          <p>Recently, diffusion-based generative models have achieved remarkable success 
+            for image generation and edition. However, their use for video editing still faces 
+            important limitations. This paper introduces \textsc{VidEdit}, a novel method for zero-shot text-based 
+            video editing ensuring strong temporal and spatial consistency. Firstly, we propose to combine atlas-based 
+            and pre-trained text-to-image diffusion models to provide a training-free and efficient editing method, 
+            which by design fulfills temporal smoothness. Secondly, we leverage off-the-shelf panoptic segmenters along 
+            with edge detectors and adapt their use for conditioned diffusion-based atlas editing. This ensures a fine 
+            spatial control on targeted regions while strictly preserving the structure of the original video. 
+            Quantitative and qualitative experiments show that \textsc{VidEdit} outperforms state-of-the-art methods 
+            on DAVIS dataset, regarding semantic faithfulness, image preservation, and temporal consistency metrics. 
+            With this framework, processing a single video only takes approximately one minute, and it can generate 
+            multiple compatible edits based on a unique text prompt.
           </p>
         </div>
       </div>
@@ -283,6 +269,7 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
+    <!--
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
@@ -291,7 +278,7 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div>-->
     <!--/ Paper video. -->
   </div>
 </section>
@@ -303,6 +290,7 @@
     <div class="columns is-centered">
 
       <!-- Visual Effects. -->
+      <!--
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
@@ -315,7 +303,7 @@
                     type="video/mp4">
           </video>
         </div>
-      </div>
+      </div>-->
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
