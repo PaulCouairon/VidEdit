@@ -25,14 +25,14 @@
     <title>Plug-and-Play Diffusion Features for Text-Driven Image-to-Image Translation</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <meta name="description"
-        content="Project page for &#39;Plug-and-Play Diffusion Features for Text-Driven Image-to-Image Translation.&#39;">
+        content="Project page for &#39;VidEdit: Zero-Shot and Spatially Aware Video Editing.&#39;">
     <link rel="icon" href="./sm/assets/wis_logo.jpeg">
 </head>
 
 <body>
     <p class="title">Plug-and-Play Diffusion Features for Text-Driven Image-to-Image Translation</p>
     <div style="text-align: center; font-size: 20pt; margin-bottom: 15px">
-            <span>CVPR 2023</span>
+            <span><!--conference--></span>
     </div>
     <p class="author">
         <span class="author"><a target="_blank" href="">Paul
@@ -72,15 +72,15 @@
                                 <div>
                                     <img class="teaser-img" src="./test/static/gif/bus.gif" />
                                     <span style="font-size: 150%;">→</span>
-                                    <img id="white-horse-result" class="teaser-img" src="./test/static/gif/bus_retrowave.gif" />
+                                    <img id="bus-result" class="teaser-img" src="./test/static/gif/bus_retrowave.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('bus-retrowave', ['bus_rusty', 'bus_watercolor'], 'white-horse-result')" class="caption caption-active" id="white-horse-pink">"a photo of a pink toy horse on the beach"</div>
+                                    <div onclick="toggle_prompt('bus-retrowave', ['bus-rusty', 'bus-watercolor'], 'bus-result')" class="caption caption-active" id="bus-retrowave">"bus" → "a retrowave bus"</div>
                                     <br />
-                                    <div onclick="toggle_prompt('bus_rusty', ['bus-retrowave', 'bus_watercolor'], 'white-horse-result')" class="caption" id="white-horse-bronze">"a photo of a bronze horse in a museum"</div>
+                                    <div onclick="toggle_prompt('bus-rusty', ['bus-retrowave', 'bus-watercolor'], 'bus-result')" class="caption" id="bus-rusty">"bus" → "a rusty bus"</div>
                                     <br />
-                                    <div onclick="toggle_prompt('bus_watercolor', ['bus-retrowave', 'bus_rusty'], 'white-horse-result')" class="caption" id="white-horse-robot">"a photo of a robot horse"</div>
+                                    <div onclick="toggle_prompt('bus-watercolor', ['bus-retrowave', 'bus-rusty'], 'bus-result')" class="caption" id="bus-watercolor">"bus" → "a watercolor bus"</div>
                                 </div>
                             </div>
 
