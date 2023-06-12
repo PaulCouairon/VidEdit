@@ -223,6 +223,12 @@
                     type="video/mp4">
           </video>
         </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+            <source src="./final.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
   </div>
@@ -238,13 +244,13 @@
         <div class="content has-text-justified">
           <p>Recently, diffusion-based generative models have achieved remarkable success 
             for image generation and edition. However, their use for video editing still faces 
-            important limitations. This paper introduces \textsc{VidEdit}, a novel method for zero-shot text-based 
+            important limitations. This paper introduces VidEdit, a novel method for zero-shot text-based 
             video editing ensuring strong temporal and spatial consistency. Firstly, we propose to combine atlas-based 
             and pre-trained text-to-image diffusion models to provide a training-free and efficient editing method, 
             which by design fulfills temporal smoothness. Secondly, we leverage off-the-shelf panoptic segmenters along 
             with edge detectors and adapt their use for conditioned diffusion-based atlas editing. This ensures a fine 
             spatial control on targeted regions while strictly preserving the structure of the original video. 
-            Quantitative and qualitative experiments show that \textsc{VidEdit} outperforms state-of-the-art methods 
+            Quantitative and qualitative experiments show that VidEdit outperforms state-of-the-art methods 
             on DAVIS dataset, regarding semantic faithfulness, image preservation, and temporal consistency metrics. 
             With this framework, processing a single video only takes approximately one minute, and it can generate 
             multiple compatible edits based on a unique text prompt.
