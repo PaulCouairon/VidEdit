@@ -201,7 +201,7 @@ code {
  text-align: center;
  }
  .carousel-item img {
- width: 130%;
+/* width: 100%; */
  }
  .carousel-inner .item img {
  margin:auto;
@@ -273,5 +273,5 @@ code {
 
 
 .teaser-img {
-    width: 300px !important;
+    width: 400px !important;
 }
