@@ -80,7 +80,7 @@ sup {
 }
 
 .container {
-	width: 1080px;
+	width: 1920px;
 	min-height: 900px;
 	max-height: 999999px; /* prevents font boosting */
 	margin: 0 auto; /* top and bottom, right and left */
