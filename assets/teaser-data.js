@@ -1,6 +1,6 @@
 file_paths = {
     "bus-retrowave": "./assets/data/gif/bus_retrowave.gif",
-    "bus-rusty": "./assets/data/gif/bus_rusty.gif",
+    "bus-drawing": "./assets/data/gif/bus_drawing.gif",
     "bus-watercolor": "./assets/data/gif/bus_watercolor.gif",
 
     "car-turn-flowers": "./assets/data/gif/car-turn_flowers.gif",
@@ -14,8 +14,4 @@ file_paths = {
     "kite-surf-santa": "./assets/data/gif/kite-surf_santa.gif",
     "kite-surf-vangogh": "./assets/data/gif/kite-surf_vangogh.gif",
     "kite-surf-fireman": "./assets/data/gif/kite-surf_fireman.gif",
-
-    "rabbit-alone": "./assets/results/tuneavideo/rabbit-watermelon/rabbit.gif",
-    "rabbit-puppy": "./assets/results/tuneavideo/rabbit-watermelon/puppy.gif",
-    "rabbit-cat": "./assets/results/tuneavideo/rabbit-watermelon/cat.gif",
 }

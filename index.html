@@ -64,25 +64,6 @@
                 <tr>
                     <div id="imageCarousel" class="carousel slide teaser-carousel" data-ride="carousel" data-interval="5000">
                         <div class="carousel-inner">
-                            <!-- Bus -->
-                            <div class="carousel-item active">
-                                <div>
-                                    <img class="teaser-img" src="./assets/data/gif/bus.gif" />
-                                    <span style="font-size: 150%;">→</span>
-                                    <img id="bus-result" class="teaser-img" src="./assets/data/gif/bus_retrowave.gif" />
-                                </div>
-                                <br />
-                                <div>
-                                    <div onclick="toggle_prompt('bus-retrowave', ['bus-rusty', 'bus-watercolor'], 'bus-result')" class="caption caption-active" id="bus-retrowave">
-                                        bus → <span style="color: steelblue">"a retrowave bus"</span></div>
-                                    <br />
-                                    <div onclick="toggle_prompt('bus-rusty', ['bus-retrowave', 'bus-watercolor'], 'bus-result')" class="caption" id="bus-rusty">
-                                        bus → <span style="color: steelblue">"a rusty bus"</span></div>
-                                    <br />
-                                    <div onclick="toggle_prompt('bus-watercolor', ['bus-retrowave', 'bus-rusty'], 'bus-result')" class="caption" id="bus-watercolor">
-                                        bus → <span style="color: steelblue">"a watercolor bus"</span></div>
-                                </div>
-                            </div>
                             
                             <!-- Car-turn -->
                             <div class="carousel-item">
@@ -114,13 +95,35 @@
                                 <br />
                                 <div>
                                     <div onclick="toggle_prompt('motorbike-golden', ['motorbike-roses', 'motorbike-lake'], 'motorbike-result')" class="caption" id="motorbike-golden">
-                                        person + motorcycle → <span style="color: steelblue">"two golden statues riding a motorbike"</span></div>
+                                        persons + motorcycle → <span style="color: steelblue">"two golden statues riding a motorbike"</span></div>
                                     <br />
                                     <div onclick="toggle_prompt('motorbike-roses', ['motorbike-golden', 'motorbike-lake'], 'motorbike-result')" class="caption caption-active" id="motorbike-roses">
                                         potted plants → <span style="color: steelblue">"a bouquet of roses"</span></div>
                                     <br />
                                     <div onclick="toggle_prompt('motorbike-lake', ['motorbike-roses', 'motorbike-golden'], 'motorbike-result')" class="caption" id="motorbike-lake">
                                         trees → <span style="color: steelblue">"a mountain lake"</span></div>
+                                </div>
+                            </div>
+                        
+                            <!-- Bus -->
+                            <div class="carousel-item active">
+                                <div>
+                                    <img class="teaser-img" src="./assets/data/gif/bus.gif" />
+                                    <span style="font-size: 150%;">→</span>
+                                    <img id="bus-result" class="teaser-img" src="./assets/data/gif/bus_retrowave.gif" />
+                                </div>
+                                <br />
+                                <div>
+                                    <div onclick="toggle_prompt('bus-retrowave', ['bus-drawing', 'bus-watercolor'], 'bus-result')" class="caption caption-active" id="bus-retrowave">
+                                        bus → <span style="color: steelblue">"a retrowave bus"</span></div>
+                                    <br />
+                                    <div onclick="toggle_prompt('bus-drawing', ['bus-retrowave', 'bus-watercolor'], 'bus-result')" class="caption" id="bus-drawing">
+                                        road + pavement + trees → <span style="color: steelblue">"a pencil drawing of a street"</span>
+                                        <br />
+                                        bus → <span style="color: steelblue">"a pencil drawing of a bus"</span></div>
+                                    <br />
+                                    <div onclick="toggle_prompt('bus-watercolor', ['bus-retrowave', 'bus-drawing'], 'bus-result')" class="caption" id="bus-watercolor">
+                                        bus → <span style="color: steelblue">"a watercolor bus"</span></div>
                                 </div>
                             </div>
 
@@ -143,26 +146,6 @@
                                         mountains + sea + sky → <span style="color: steelblue">"a fire"</span>
                                         <br />
                                         person → <span style="color: steelblue">"a fireman"</span></div>
-                                </div>
-                            </div>
-
-                            <!-- Lion -->
-                            <div class="carousel-item">
-                                <div>
-                                    <img class="teaser-img" src="./assets/results/tuneavideo/lion-roaring/train.gif" />
-                                    <span style="font-size: 150%;">→</span>
-                                    <img id="lion-result" class="teaser-img" src="./assets/results/tuneavideo/lion-roaring/lion-vangogh.gif" />
-                                </div>
-                                <br />
-                                <div>
-                                    <div onclick="toggle_prompt('lion-vangogh', ['lion-tiger', 'lion-wolf'], 'lion-result')" class="caption caption-active" id="lion-vangogh">
-                                        "A lion is roaring, Van Gogh style"</div>
-                                    <br />
-                                    <div onclick="toggle_prompt('lion-tiger', ['lion-vangogh', 'lion-wolf'], 'lion-result')" class="caption" id="lion-tiger">
-                                        "A tiger is roaring"</div>
-                                    <br />
-                                    <div onclick="toggle_prompt('lion-wolf', ['lion-vangogh', 'lion-tiger'], 'lion-result')" class="caption" id="lion-wolf">
-                                        "A wolf is roaring in New York City"</div>
                                 </div>
                             </div>
 
