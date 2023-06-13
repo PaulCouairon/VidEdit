@@ -11,9 +11,9 @@ file_paths = {
     "motorbike-lake": "./assets/data/gif/motorbike_lake.gif",
     "motorbike-snowy": "./assets/data/gif/motorbike_snowy.gif",
 
-    "lion-vangogh": "./assets/results/tuneavideo/lion-roaring/lion-vangogh.gif",
-    "lion-tiger": "./assets/results/tuneavideo/lion-roaring/tiger-roar.gif",
-    "lion-wolf": "./assets/results/tuneavideo/lion-roaring/wolf-nyc.gif",
+    "kite-surf-santa": "./assets/data/gif/kite-surf_santa.gif",
+    "kite-surf-vangogh": "./assets/data/gif/kite-surf_vangogh.gif",
+    "kite-surf-fireman": "./assets/data/gif/kite-surf_fireman.gif",
 
     "rabbit-alone": "./assets/results/tuneavideo/rabbit-watermelon/rabbit.gif",
     "rabbit-puppy": "./assets/results/tuneavideo/rabbit-watermelon/puppy.gif",
