@@ -127,6 +127,28 @@
                                 </div>
                             </div>
 
+                            <!-- Car-Shadow -->
+                            <div class="carousel-item">
+                                <div>
+                                    <img class="teaser-img" src="./assets/data/gif/car-shadow.gif" />
+                                    <span style="font-size: 150%;">→</span>
+                                    <img id="car-shadow-result" class="teaser-img" src="./assets/data/gif/car-shadow_golden.gif" />
+                                </div>
+                                <br />
+                                <div>
+                                    <div onclick="toggle_prompt('car-shadow-golden', ['car-shadow-road', 'car-shadow-miyazaki'], 'car-shadow-result')" class="caption caption-active" id="car-shadow-golden">
+                                        car → <span style="color: steelblue">"a golden car"</span></div>
+                                    <br />
+                                    <div onclick="toggle_prompt('car-shadow-road', ['car-shadow-golden', 'car-shadow-miyazaki'], 'car-shadow-result')" class="caption" id="car-shadow-road">
+                                        road → <span style="color: steelblue">"a red paver block road"</span></div>
+                                    <br />
+                                    <div onclick="toggle_prompt('car-shadow-miyazaki', ['car-shadow-golden', 'car-shadow-road'], 'car-shadow-result')" class="caption" id="car-shadow-miyazaki">
+                                        road + pavement + buildings → <span style="color: steelblue">"a city street, Miyazaki style"</span>
+                                        <br />
+                                        car → <span style="color: steelblue">"a drawing of a car, Miyazaki style"</span></div>
+                                </div>
+                            </div>
+
                             <!-- Kite-surf -->
                             <div class="carousel-item">
                                 <div>
