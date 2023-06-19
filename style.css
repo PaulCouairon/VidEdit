@@ -242,7 +242,7 @@ code {
  }
 
  .teaser-carousel {
-    width: 800px;
+    width: 900px;
     margin: auto;
     height: 400px;
  }
@@ -273,5 +273,5 @@ code {
 
 
 .teaser-img {
-    width: 350px !important;
+    width: 400px !important;
 }
