@@ -317,7 +317,8 @@
         let result = document.getElementById(result_id);
         result.src = file_paths[active_prompt_id];
         
-        let gif = document.getElementById(teaser_id);
+        var gif = document.getElementById(teaser_id);
+        var src = gif.src;
         gif.src = '';
         gif.src = src;
 
