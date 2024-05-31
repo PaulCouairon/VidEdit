@@ -83,10 +83,12 @@
                                                   replayGif('teaser')" class="caption caption-active" id="car-turn-rusty">
                                         car → <span style="color: steelblue">"a rusty jeep"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('car-turn-flowers', ['car-turn-rusty', 'car-turn-autumn'], 'car-turn-result')" class="caption" id="car-turn-flowers">
+                                    <div onclick="toggle_prompt('car-turn-flowers', ['car-turn-rusty', 'car-turn-autumn'], 'car-turn-result');
+                                                  replayGif('teaser')" class="caption" id="car-turn-flowers">
                                         grass → <span style="color: steelblue">"a wildflower field"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('car-turn-autumn', ['car-turn-rusty', 'car-turn-flowers'], 'car-turn-result')" class="caption" id="car-turn-autumn">
+                                    <div onclick="toggle_prompt('car-turn-autumn', ['car-turn-rusty', 'car-turn-flowers'], 'car-turn-result');
+                                                  replayGif('teaser')" class="caption" id="car-turn-autumn">
                                         mountains + trees + grass → <span style="color: steelblue">"a landscape in autumn"</span></div>
                                 </div>
                             </div>
@@ -94,19 +96,22 @@
                             <!-- Motorbike -->
                             <div class="carousel-item">
                                 <div>
-                                    <img class="teaser-img" src="./assets/data/gif/motorbike.gif" />
+                                    <img id="teaser" class="teaser-img" src="./assets/data/gif/motorbike.gif" />
                                     <span style="font-size: 150%;">→</span>
                                     <img id="motorbike-result" class="teaser-img" src="./assets/data/gif/motorbike_golden.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('motorbike-golden', ['motorbike-roses', 'motorbike-lake'], 'motorbike-result')" class="caption caption-active" id="motorbike-golden">
+                                    <div onclick="toggle_prompt('motorbike-golden', ['motorbike-roses', 'motorbike-lake'], 'motorbike-result');
+                                                  replayGif('teaser')" class="caption caption-active" id="motorbike-golden">
                                         persons + motorcycle → <span style="color: steelblue">"two golden statues riding a motorbike"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('motorbike-roses', ['motorbike-golden', 'motorbike-lake'], 'motorbike-result')" class="caption" id="motorbike-roses">
+                                    <div onclick="toggle_prompt('motorbike-roses', ['motorbike-golden', 'motorbike-lake'], 'motorbike-result');
+                                                  replayGif('teaser')" class="caption" id="motorbike-roses">
                                         potted plants → <span style="color: steelblue">"a bouquet of roses"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('motorbike-lake', ['motorbike-roses', 'motorbike-golden'], 'motorbike-result')" class="caption" id="motorbike-lake">
+                                    <div onclick="toggle_prompt('motorbike-lake', ['motorbike-roses', 'motorbike-golden'], 'motorbike-result');
+                                                  replayGif('teaser')" class="caption" id="motorbike-lake">
                                         trees → <span style="color: steelblue">"a mountain lake"</span></div>
                                 </div>
                             </div>
@@ -114,21 +119,24 @@
                             <!-- Bus -->
                             <div class="carousel-item">
                                 <div>
-                                    <img class="teaser-img" src="./assets/data/gif/bus.gif" />
+                                    <img id="teaser" class="teaser-img" src="./assets/data/gif/bus.gif" />
                                     <span style="font-size: 150%;">→</span>
                                     <img id="bus-result" class="teaser-img" src="./assets/data/gif/bus_retrowave.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('bus-retrowave', ['bus-drawing', 'bus-watercolor'], 'bus-result')" class="caption caption-active" id="bus-retrowave">
+                                    <div onclick="toggle_prompt('bus-retrowave', ['bus-drawing', 'bus-watercolor'], 'bus-result');
+                                                  replayGif('teaser')" class="caption caption-active" id="bus-retrowave">
                                         bus → <span style="color: steelblue">"a retrowave bus"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('bus-drawing', ['bus-retrowave', 'bus-watercolor'], 'bus-result')" class="caption" id="bus-drawing">
+                                    <div onclick="toggle_prompt('bus-drawing', ['bus-retrowave', 'bus-watercolor'], 'bus-result');
+                                                  replayGif('teaser')" class="caption" id="bus-drawing">
                                         road + pavement + trees → <span style="color: steelblue">"a pencil drawing of a street"</span>
                                         <br />
                                         bus → <span style="color: steelblue">"a pencil drawing of a bus"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('bus-watercolor', ['bus-retrowave', 'bus-drawing'], 'bus-result')" class="caption" id="bus-watercolor">
+                                    <div onclick="toggle_prompt('bus-watercolor', ['bus-retrowave', 'bus-drawing'], 'bus-result');
+                                                  replayGif('teaser')" class="caption" id="bus-watercolor">
                                         bus → <span style="color: steelblue">"a watercolor bus"</span></div>
                                 </div>
                             </div>
@@ -136,19 +144,22 @@
                             <!-- Car-Shadow -->
                             <div class="carousel-item">
                                 <div>
-                                    <img class="teaser-img" src="./assets/data/gif/car-shadow.gif" />
+                                    <img id="teaser" class="teaser-img" src="./assets/data/gif/car-shadow.gif" />
                                     <span style="font-size: 150%;">→</span>
                                     <img id="car-shadow-result" class="teaser-img" src="./assets/data/gif/car-shadow_golden.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('car-shadow-golden', ['car-shadow-road', 'car-shadow-miyazaki'], 'car-shadow-result')" class="caption caption-active" id="car-shadow-golden">
+                                    <div onclick="toggle_prompt('car-shadow-golden', ['car-shadow-road', 'car-shadow-miyazaki'], 'car-shadow-result');
+                                                  replayGif('teaser')" class="caption caption-active" id="car-shadow-golden">
                                         car → <span style="color: steelblue">"a golden car"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('car-shadow-road', ['car-shadow-golden', 'car-shadow-miyazaki'], 'car-shadow-result')" class="caption" id="car-shadow-road">
+                                    <div onclick="toggle_prompt('car-shadow-road', ['car-shadow-golden', 'car-shadow-miyazaki'], 'car-shadow-result');
+                                                  replayGif('teaser')" class="caption" id="car-shadow-road">
                                         road → <span style="color: steelblue">"a red paver block road"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('car-shadow-miyazaki', ['car-shadow-golden', 'car-shadow-road'], 'car-shadow-result')" class="caption" id="car-shadow-miyazaki">
+                                    <div onclick="toggle_prompt('car-shadow-miyazaki', ['car-shadow-golden', 'car-shadow-road'], 'car-shadow-result');
+                                                  replayGif('teaser')" class="caption" id="car-shadow-miyazaki">
                                         road + pavement + buildings → <span style="color: steelblue">"a city street, Miyazaki style"</span>
                                         <br />
                                         car → <span style="color: steelblue">"a drawing of a car, Miyazaki style"</span></div>
@@ -158,19 +169,22 @@
                             <!-- Kite-surf -->
                             <div class="carousel-item">
                                 <div>
-                                    <img class="teaser-img" src="./assets/data/gif/kite-surf.gif" />
+                                    <img id="teaser" class="teaser-img" src="./assets/data/gif/kite-surf.gif" />
                                     <span style="font-size: 150%;">→</span>
                                     <img id="kite-surf-result" class="teaser-img" src="./assets/data/gif/kite-surf_santa.gif" />
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('kite-surf-santa', ['kite-surf-vangogh', 'kite-surf-fireman'], 'kite-surf-result')" class="caption caption-active" id="kite-surf-santa">
+                                    <div onclick="toggle_prompt('kite-surf-santa', ['kite-surf-vangogh', 'kite-surf-fireman'], 'kite-surf-result');
+                                                  replayGif('teaser')" class="caption caption-active" id="kite-surf-santa">
                                         person → <span style="color: steelblue">"a santa"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('kite-surf-vangogh', ['kite-surf-santa', 'kite-surf-fireman'], 'kite-surf-result')" class="caption" id="kite-surf-vangogh">
+                                    <div onclick="toggle_prompt('kite-surf-vangogh', ['kite-surf-santa', 'kite-surf-fireman'], 'kite-surf-result');
+                                                  replayGif('teaser')" class="caption" id="kite-surf-vangogh">
                                         mountains + sea + sky → <span style="color: steelblue">"sea with mountains in the background, Van Gogh style"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('kite-surf-fireman', ['kite-surf-santa', 'kite-surf-vangogh'], 'kite-surf-result')" class="caption" id="kite-surf-fireman">
+                                    <div onclick="toggle_prompt('kite-surf-fireman', ['kite-surf-santa', 'kite-surf-vangogh'], 'kite-surf-result');
+                                                  replayGif('teaser')" class="caption" id="kite-surf-fireman">
                                         mountains + sea + sky → <span style="color: steelblue">"a fire"</span>
                                         <br />
                                         person → <span style="color: steelblue">"a fireman"</span></div>
