@@ -79,16 +79,13 @@
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('car-turn-rusty', ['car-turn-flowers', 'car-turn-autumn'], 'car-turn-result');
-                                                  replayGif('car-turn')" class="caption caption-active" id="car-turn-rusty">
+                                    <div onclick="toggle_prompt('car-turn-rusty', ['car-turn-flowers', 'car-turn-autumn'], 'car-turn-result', 'car-turn')" class="caption caption-active" id="car-turn-rusty">
                                         car → <span style="color: steelblue">"a rusty jeep"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('car-turn-flowers', ['car-turn-rusty', 'car-turn-autumn'], 'car-turn-result');
-                                                  replayGif('car-turn')" class="caption" id="car-turn-flowers">
+                                    <div onclick="toggle_prompt('car-turn-flowers', ['car-turn-rusty', 'car-turn-autumn'], 'car-turn-result', 'car-turn')" class="caption" id="car-turn-flowers">
                                         grass → <span style="color: steelblue">"a wildflower field"</span></div>
                                     <br />
-                                    <div onclick="toggle_prompt('car-turn-autumn', ['car-turn-rusty', 'car-turn-flowers'], 'car-turn-result');
-                                                  replayGif('car-turn')" class="caption" id="car-turn-autumn">
+                                    <div onclick="toggle_prompt('car-turn-autumn', ['car-turn-rusty', 'car-turn-flowers'], 'car-turn-result', 'car-turn')" class="caption" id="car-turn-autumn">
                                         mountains + trees + grass → <span style="color: steelblue">"a landscape in autumn"</span></div>
                                 </div>
                             </div>
@@ -321,7 +318,7 @@
         prompt_element.classList.remove("caption-active");
     }
 
-    function toggle_prompt(active_prompt_id, inactive_prompt_ids, result_id) {
+    function toggle_prompt(active_prompt_id, inactive_prompt_ids, result_id, teaser_id) {
         let active_prompt = document.getElementById(active_prompt_id);
         prompt_on(active_prompt);
         for (let i = 0; i < inactive_prompt_ids.length; i++) {
@@ -330,8 +327,9 @@
         }
 
         let result = document.getElementById(result_id);
-        sleep(2000);
         result.src = file_paths[active_prompt_id];
+        replayGif(gif_id);
+        sleep(2000);
     }
 
     function sleep(ms) {
@@ -342,7 +340,7 @@
         var gif = document.getElementById(gif_id);
         var src = gif.src;
         gif.src = ''; // Temporarily remove the src
-        sleep(2000); // Reset the src, replaying the GIF
+        //sleep(2000); // Reset the src, replaying the GIF
         gif.src = src;
     }
  </script>
