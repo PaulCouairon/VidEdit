@@ -316,8 +316,15 @@
 
         let result = document.getElementById(result_id);
         result.src = file_paths[active_prompt_id];
-        replayGif(teaser_id);
-        sleep(2000);
+        
+        let gif = document.getElementById(teaser_id);
+        gif.src = '';
+
+        //replayGif(teaser_id);
+        setTimeout(function() {
+            result.style.display = 'inline';
+            gif.style.display = 'inline';
+        }, 1000);
     }
 
     function sleep(ms) {
