@@ -330,7 +330,7 @@
         }
 
         let result = document.getElementById(result_id);
-        sleep(1000);
+        sleep(2000);
         result.src = file_paths[active_prompt_id];
     }
 
@@ -342,7 +342,7 @@
         var gif = document.getElementById(gif_id);
         var src = gif.src;
         gif.src = ''; // Temporarily remove the src
-        sleep(1000); // Reset the src, replaying the GIF
+        sleep(2000); // Reset the src, replaying the GIF
         gif.src = src;
     }
  </script>
