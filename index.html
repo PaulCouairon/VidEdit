@@ -330,8 +330,8 @@
         }
 
         let result = document.getElementById(result_id);
+        sleep(1000);
         result.src = file_paths[active_prompt_id];
-        setTimeout(function(){}, 1000);
     }
 
     function sleep(ms) {
@@ -342,8 +342,8 @@
         var gif = document.getElementById(gif_id);
         var src = gif.src;
         gif.src = ''; // Temporarily remove the src
-        gif.src = src;
         sleep(1000); // Reset the src, replaying the GIF
+        gif.src = src;
     }
  </script>
 
