@@ -331,15 +331,19 @@
 
         let result = document.getElementById(result_id);
         result.src = file_paths[active_prompt_id];
-        setTimeout(function(){}, 700);
+        setTimeout(function(){}, 1000);
     }
+
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+   }
 
     function replayGif(gif_id) {
         var gif = document.getElementById(gif_id);
         var src = gif.src;
         gif.src = ''; // Temporarily remove the src
         gif.src = src;
-        setTimeout(function(){}, 700); // Reset the src, replaying the GIF
+        sleep(1000); // Reset the src, replaying the GIF
     }
  </script>
 
