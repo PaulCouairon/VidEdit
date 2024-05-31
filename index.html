@@ -330,14 +330,18 @@
         }
 
         let result = document.getElementById(result_id);
-        result.src = file_paths[active_prompt_id];
+        setTimeout(function(){
+            result.src = file_paths[active_prompt_id]
+        }, 100);
     }
 
     function replayGif(gif_id) {
         var gif = document.getElementById(gif_id);
         var src = gif.src;
         gif.src = ''; // Temporarily remove the src
-        gif.src = src; // Reset the src, replaying the GIF
+        setTimeout(function(){
+            gif.src = src
+        }, 100); // Reset the src, replaying the GIF
     }
  </script>
 
