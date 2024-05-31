@@ -314,24 +314,38 @@
             prompt_off(inactive_prompt);
         }
 
+        let gif1Loaded = false;
+        let gif2Loaded = false;
+
         let result = document.getElementById(result_id);
-        result.src = file_paths[active_prompt_id];
+        let gif = document.getElementById(teaser_id);
         
-        var gif = document.getElementById(teaser_id);
-        var src = gif.src;
+        result.addEventListener('load', function() {
+            gif1Loaded = true;
+            checkAndPlayGifs();
+        });
+
+        gif.addEventListener('load', function() {
+            gif2Loaded = true;
+            checkAndPlayGifs();
+        });
+
+        result.src = file_paths[active_prompt_id];
         gif.src = '';
         gif.src = src;
-
-        //replayGif(teaser_id);
-        setTimeout(function() {
-            result.style.display = 'inline';
-            gif.style.display = 'inline';
-        }, 1000);
     }
 
-    function sleep(ms) {
-      return new Promise(resolve => setTimeout(resolve, ms));
-   }
+    function checkAndPlayGifs() {
+        if (gif1Loaded && gif2Loaded) {
+            // Reset the GIFs by changing their src attributes
+            gif1.src = gif1.src;
+            gif2.src = gif2.src;
+            
+            // Display the GIFs
+            gif1.style.display = 'inline';
+            gif2.style.display = 'inline';
+        }
+    }
 
     function replayGif(gif_id) {
         var gif = document.getElementById(gif_id);
