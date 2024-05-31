@@ -72,14 +72,15 @@
                             <!-- Car-turn -->
                             <div class="carousel-item active">
                                 <div>
-                                    <!--<img class="teaser-img" src="./assets/data/gif/car-turn.gif" />-->
-                                    <!--<span style="font-size: 150%;">→</span>-->
-                                    <!--<img id="car-turn-result" class="teaser-img" src="./assets/data/gif/car-turn_rusty.gif" />-->
-                                    <img id="car-turn-result" class="teaser-img" src="./gif/car-turn_rusty.gif" />
+                                    <img id="teaser" class="teaser-img" src="./assets/data/gif/car-turn.gif" />
+                                    <span style="font-size: 150%;">→</span>
+                                    <img id="car-turn-result" class="teaser-img" src="./assets/data/gif/car-turn_rusty.gif" />
+                                    <!--<img id="car-turn-result" class="teaser-img" src="./gif/car-turn_rusty.gif" />-->
                                 </div>
                                 <br />
                                 <div>
-                                    <div onclick="toggle_prompt('car-turn-rusty', ['car-turn-flowers', 'car-turn-autumn'], 'car-turn-result')" class="caption caption-active" id="car-turn-rusty">
+                                    <div onclick="toggle_prompt('car-turn-rusty', ['car-turn-flowers', 'car-turn-autumn'], 'car-turn-result');
+                                                  toggle_prompt('car-turn', ['car-turn-flowers', 'car-turn-autumn'], 'teaser')" class="caption caption-active" id="car-turn-rusty">
                                         car → <span style="color: steelblue">"a rusty jeep"</span></div>
                                     <br />
                                     <div onclick="toggle_prompt('car-turn-flowers', ['car-turn-rusty', 'car-turn-autumn'], 'car-turn-result')" class="caption" id="car-turn-flowers">
