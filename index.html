@@ -319,7 +319,7 @@
 
         let result = document.getElementById(result_id);
         let gif = document.getElementById(teaser_id);
-        
+
         result.addEventListener('load', function() {
             gif1Loaded = true;
             checkAndPlayGifs();
@@ -331,6 +331,7 @@
         });
 
         result.src = file_paths[active_prompt_id];
+        let src = gif.src;
         gif.src = '';
         gif.src = src;
     }
