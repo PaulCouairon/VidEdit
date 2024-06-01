@@ -317,10 +317,10 @@
         // let result = document.getElementById(result_id);
         // let gif = document.getElementById(teaser_id);
 
-        let images = [
-            result_id,
-            teaser_id
-        ];
+        let images = {
+            result_id: active_prompt_id,
+            teaser_id : teaser_id,
+        };
 
         let imgCount = images.length;
 
@@ -328,13 +328,22 @@
         // gif.src = ''
         // gif.src = file_paths[teaser_id]
 
-        images.forEach(url => {
-            let img = document.getElementById(url);
-            // img = new Image();
+        // images.forEach(url => {
+        //     let img = document.getElementById(url);
+        //     // img = new Image();
+        //     img.onload = imgLoaded;
+        //     img.src = '';
+        //     img.src = file_paths[url];
+        // });
+
+        for(var key in images) {
+            let img = document.getElementById(key);
             img.onload = imgLoaded;
             img.src = '';
-            img.src = file_paths[url];
-        });
+            img.src = file_paths[images[key]];
+
+            // do something with "key" and "value" variables
+            }
 
     }
 
