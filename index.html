@@ -314,12 +314,21 @@
             prompt_off(inactive_prompt);
         }
 
-        let result = document.getElementById(result_id);
-        let gif = document.getElementById(teaser_id);
+        // let result = document.getElementById(result_id);
+        // let gif = document.getElementById(teaser_id);
 
-        let imgCount = 2;
-        result.onload = imgLoaded;
-        gif.onload = imgLoaded
+        let result = new Image();
+        let gif = new Image();
+
+        result.onload = function() {
+            // Append the loaded GIF to the container
+            document.getElementById(result_id);
+        };
+
+        gif.onload = function() {
+            // Append the loaded GIF to the container
+            document.getElementById(teaser_id);
+        };
 
         result.src = '';
         gif.src = ''
@@ -361,13 +370,13 @@
 
     }
 
-    function imgLoaded(ev) {
-        if (--imgCount === 0) {
-            document.querySelectorAll(".syncedImage").forEach((img, i) => {
-                img.src = images[i];
-            });
-        }
-    }
+    // function imgLoaded(ev) {
+    //     if (--imgCount === 0) {
+    //         document.querySelectorAll(".syncedImage").forEach((img, i) => {
+    //             img.src = images[i];
+    //         });
+    //     }
+    // }
 
  </script>
 
