@@ -314,20 +314,20 @@
             prompt_off(inactive_prompt);
         }
 
-        // let result = document.getElementById(result_id);
-        // let gif = document.getElementById(teaser_id);
+        let result = document.getElementById(result_id);
+        let gif = document.getElementById(teaser_id);
 
-        const result = new Image();
-        const gif = new Image();
+        // const result = new Image();
+        // const gif = new Image();
 
         result.onload = function() {
             // Append the loaded GIF to the container
-            document.getElementById(result_id).appendChild(result);
+            document.getElementById(result_id);
         };
 
         gif.onload = function() {
             // Append the loaded GIF to the container
-            document.getElementById(teaser_id).appendChild(gif);
+            document.getElementById(teaser_id);
         };
 
         result.src = '';
