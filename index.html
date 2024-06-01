@@ -318,7 +318,7 @@
         // let gif = document.getElementById(teaser_id);
 
         let images = [
-            active_prompt_id,
+            result_id,
             teaser_id
         ];
 
@@ -330,8 +330,9 @@
 
         images.forEach(url => {
             let img = document.getElementById(url);
+            // img = new Image();
             img.onload = imgLoaded;
-            // img.src = '';
+            img.src = '';
             img.src = file_paths[url];
         });
 
