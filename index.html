@@ -314,8 +314,8 @@
             prompt_off(inactive_prompt);
         }
 
-        let result = document.getElementById(result_id);
-        let gif = document.getElementById(teaser_id);
+        // let result = document.getElementById(result_id);
+        // let gif = document.getElementById(teaser_id);
 
         let images = [
             active_prompt_id,
@@ -331,7 +331,7 @@
         images.forEach(url => {
             let img = document.getElementById(url);
             img.onload = imgLoaded;
-            img.src = '';
+            // img.src = '';
             img.src = file_paths[url];
         });
 
