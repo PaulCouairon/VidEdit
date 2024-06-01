@@ -317,66 +317,12 @@
         let result = document.getElementById(result_id);
         let gif = document.getElementById(teaser_id);
 
-        // const result = new Image();
-        // const gif = new Image();
-
-        result.onload = function() {
-            // Append the loaded GIF to the container
-            document.getElementById(result_id);
-        };
-
-        gif.onload = function() {
-            // Append the loaded GIF to the container
-            document.getElementById(teaser_id);
-        };
-
-        result.src = '';
         gif.src = '';
 
         result.src = file_paths[active_prompt_id];
         gif.src = file_paths[teaser_id];
 
-        
-
-
-
-        // let images = {
-        //     result_id: active_prompt_id,
-        //     teaser_id : teaser_id,
-        // };
-
-        // let imgCount = images.length;
-
-        // result.src = file_paths[active_prompt_id];
-        // gif.src = ''
-        // gif.src = file_paths[teaser_id]
-
-        // images.forEach(url => {
-        //     let img = document.getElementById(url);
-        //     // img = new Image();
-        //     img.onload = imgLoaded;
-        //     img.src = '';
-        //     img.src = file_paths[url];
-        // });
-
-        // for(var key in images) {
-        //     let img = document.getElementById(key);
-        //     img.onload = imgLoaded;
-        //     img.src = '';
-        //     img.src = file_paths[images[key]];
-
-        //     // do something with "key" and "value" variables
-        //     }
-
     }
-
-    // function imgLoaded(ev) {
-    //     if (--imgCount === 0) {
-    //         document.querySelectorAll(".syncedImage").forEach((img, i) => {
-    //             img.src = images[i];
-    //         });
-    //     }
-    // }
 
  </script>
 
