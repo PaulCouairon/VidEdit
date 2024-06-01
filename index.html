@@ -322,12 +322,12 @@
 
         result.onload = function() {
             // Append the loaded GIF to the container
-            document.getElementById(result_id);
+            document.getElementById(result_id).appendChild(result);
         };
 
         gif.onload = function() {
             // Append the loaded GIF to the container
-            document.getElementById(teaser_id);
+            document.getElementById(teaser_id).appendChild(gif);
         };
 
         result.src = '';
