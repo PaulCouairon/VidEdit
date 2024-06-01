@@ -314,39 +314,36 @@
             prompt_off(inactive_prompt);
         }
 
-        // let gif1Loaded = false;
-        // let gif2Loaded = false;
-
         let result = document.getElementById(result_id);
         let gif = document.getElementById(teaser_id);
 
-        // let resultCount = images.length;
-        result.onload = start;
-        gif.onload = start;
-        result.src = file_paths[active_prompt_id];
-        gif.src = '';
-        gif.src = src;
+        let images = [
+            active_prompt_id,
+            teaser_id
+        ];
 
-        // images.forEach(url => {
-        //     let img = new Image();
-        //     img.onload = imgLoaded;
-        //     img.src = '';
-        //     img.src = url;
-        // });
+        let imgCount = images.length;
 
         // result.src = file_paths[active_prompt_id];
-        // let src = gif.src;
-        // gif.src = '';
-        // gif.src = src;
+        // gif.src = ''
+        // gif.src = file_paths[teaser_id]
+
+        images.forEach(url => {
+            let img = document.getElementById(url);
+            img.onload = imgLoaded;
+            img.src = '';
+            img.src = file_paths[url];
+        });
+
     }
 
-//     function imgLoaded(ev) {
-//     if (--imgCount === 0) {
-//       document.querySelectorAll(".syncedImage").forEach((img, i) => {
-//         img.src = images[i];
-//       });
-//     }
-//   }
+    function imgLoaded(ev) {
+        if (--imgCount === 0) {
+            document.querySelectorAll(".syncedImage").forEach((img, i) => {
+                img.src = images[i];
+            });
+        }
+    }
 
  </script>
 
