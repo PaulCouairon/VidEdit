@@ -314,15 +314,29 @@
             prompt_off(inactive_prompt);
         }
 
-        // let result = document.getElementById(result_id);
-        // let gif = document.getElementById(teaser_id);
+        let result = document.getElementById(result_id);
+        let gif = document.getElementById(teaser_id);
 
-        let images = {
-            result_id: active_prompt_id,
-            teaser_id : teaser_id,
-        };
+        let imgCount = 2;
+        result.onload = imgLoaded;
+        gif.onload = imgLoaded
 
-        let imgCount = images.length;
+        result.src = '';
+        gif.src = ''
+
+        result.src = file_paths[active_prompt_id];
+        gif.src = file_paths[teaser_id];
+
+        
+
+
+
+        // let images = {
+        //     result_id: active_prompt_id,
+        //     teaser_id : teaser_id,
+        // };
+
+        // let imgCount = images.length;
 
         // result.src = file_paths[active_prompt_id];
         // gif.src = ''
@@ -336,14 +350,14 @@
         //     img.src = file_paths[url];
         // });
 
-        for(var key in images) {
-            let img = document.getElementById(key);
-            img.onload = imgLoaded;
-            img.src = '';
-            img.src = file_paths[images[key]];
+        // for(var key in images) {
+        //     let img = document.getElementById(key);
+        //     img.onload = imgLoaded;
+        //     img.src = '';
+        //     img.src = file_paths[images[key]];
 
-            // do something with "key" and "value" variables
-            }
+        //     // do something with "key" and "value" variables
+        //     }
 
     }
 
