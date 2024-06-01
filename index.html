@@ -314,47 +314,40 @@
             prompt_off(inactive_prompt);
         }
 
-        let gif1Loaded = false;
-        let gif2Loaded = false;
+        // let gif1Loaded = false;
+        // let gif2Loaded = false;
 
         let result = document.getElementById(result_id);
         let gif = document.getElementById(teaser_id);
 
-        result.addEventListener('load', function() {
-            gif1Loaded = true;
-            checkAndPlayGifs();
-        });
-
-        gif.addEventListener('load', function() {
-            gif2Loaded = true;
-            checkAndPlayGifs();
-        });
-
+        // let resultCount = images.length;
+        result.onload = start;
+        gif.onload = start;
         result.src = file_paths[active_prompt_id];
-        let src = gif.src;
         gif.src = '';
         gif.src = src;
+
+        // images.forEach(url => {
+        //     let img = new Image();
+        //     img.onload = imgLoaded;
+        //     img.src = '';
+        //     img.src = url;
+        // });
+
+        // result.src = file_paths[active_prompt_id];
+        // let src = gif.src;
+        // gif.src = '';
+        // gif.src = src;
     }
 
-    function checkAndPlayGifs() {
-        if (gif1Loaded && gif2Loaded) {
-            // Reset the GIFs by changing their src attributes
-            result.src = result.src;
-            gif.src = gif.src;
-            
-            // Display the GIFs
-            result.style.display = 'inline';
-            gif.style.display = 'inline';
-        }
-    }
+//     function imgLoaded(ev) {
+//     if (--imgCount === 0) {
+//       document.querySelectorAll(".syncedImage").forEach((img, i) => {
+//         img.src = images[i];
+//       });
+//     }
+//   }
 
-    function replayGif(gif_id) {
-        var gif = document.getElementById(gif_id);
-        var src = gif.src;
-        gif.src = ''; // Temporarily remove the src
-        //sleep(2000); // Reset the src, replaying the GIF
-        gif.src = src;
-    }
  </script>
 
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
